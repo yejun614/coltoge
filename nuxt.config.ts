@@ -4,10 +4,6 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/content"
   ],
-  ssr: true,
-  nitro: {
-    preset: "github_pages"
-  },
   content: {
     highlight: {
       theme: {

@@ -35,7 +35,7 @@ function filter(keyword, articles) {
     <input class="search-bar" v-model="search" placeholder="Search">
 
     <ContentList v-if="search.length > 0" path="/blog" v-slot="{ list }">
-        <ul  v-for="article in filter(search, list)" :key="article._path">
+        <ul v-for="article in filter(search, list)" :key="article._path">
             <li v-if="article._path != '/blog'" class="search-result-item">
                 <MyContentDoc :path="article._path" />
                 <div class="block"></div>
