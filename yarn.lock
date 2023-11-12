@@ -1262,6 +1262,20 @@
   dependencies:
     "@types/node" "*"
 
+"@types/jquery@*":
+  version "3.5.27"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.27.tgz#d9d67a003d0292a36fe35868a618c82f8fd12b19"
+  integrity sha512-TR28Y8ezIGgfyA02UOh9x+Fy16/1qWYAnvtRd2gTBJuccX/vmddyti0MezLkTv7f+OLofVc2T961VPyKv1tXJQ==
+  dependencies:
+    "@types/sizzle" "*"
+
+"@types/mark.js@^8.11.11":
+  version "8.11.11"
+  resolved "https://registry.yarnpkg.com/@types/mark.js/-/mark.js-8.11.11.tgz#a36417feec5cc519dd2f0f998ea1ec578118972e"
+  integrity sha512-DXLKRABbbeTY7K0zwbTKjknbYgoufZuAwKq3mmMMDo7PnxqpTswoCN0m2tybM9e0J2QQl1PsJsvf0yt/iFIGTw==
+  dependencies:
+    "@types/jquery" "*"
+
 "@types/mdast@^3.0.0":
   version "3.0.15"
   resolved "https://registry.yarnpkg.com/@types/mdast/-/mdast-3.0.15.tgz#49c524a263f30ffa28b71ae282f813ed000ab9f5"
@@ -1297,6 +1311,11 @@
   version "1.20.2"
   resolved "https://registry.yarnpkg.com/@types/resolve/-/resolve-1.20.2.tgz#97d26e00cd4a0423b4af620abecf3e6f442b7975"
   integrity sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==
+
+"@types/sizzle@*":
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.6.tgz#e39b7123dac4631001939bd4c2a26d46010f2275"
+  integrity sha512-m04Om5Gz6kbjUwAQ7XJJQ30OdEFsSmAVsvn4NYwcTRyMVpKKa1aPuESw1n2CxS5fYkOQv3nHgDKeNa8e76fUkw==
 
 "@types/unist@*", "@types/unist@^3.0.0":
   version "3.0.2"
