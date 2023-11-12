@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup>
 import Mark from "mark.js";
 
 const search = ref("");
