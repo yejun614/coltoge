@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.9.0",
+    "latex.js": "^0.12.6",
     "mark.js": "^8.11.1"
   }
 }
