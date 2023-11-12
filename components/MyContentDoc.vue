@@ -1,5 +1,19 @@
-<script lang="ts" setup>
-const props = defineProps(["path", ""])
+<script setup>
+import renderMathInElement from "katex/contrib/auto-render/auto-render";
+const props = defineProps(["path", ""]);
+
+onMounted(() => {
+    renderMathInElement(document.body, {
+      strict: "ignore",
+      output: "mathml",
+      delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false},
+          {left: "\\(", right: "\\)", display: false},
+          {left: "\\[", right: "\\]", display: true}
+      ]
+    });
+});
 </script>
 
 <template>
