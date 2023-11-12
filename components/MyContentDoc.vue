@@ -5,15 +5,24 @@ const props = defineProps(["path", ""])
 <template>
     <ContentDoc
         :path="props.path"
-        v-slot="{ doc }"
     >
-      <article>
-        <h1>{{ doc.title }}</h1>
-        <span v-if="doc.createdAt != undefined" class="created-at">
-        {{ doc.createdAt }}
-        </span>
-        <ContentRenderer :value="doc" />
-      </article>
+      <template #not-found>
+        <p>Document not found</p>
+      </template>
+
+      <template #empty>
+        <p>There is nothing here</p>
+      </template>
+
+      <template #default="{ doc }">
+        <article>
+          <h1>{{ doc.title }}</h1>
+          <span v-if="doc.createdAt != undefined" class="created-at">
+          {{ doc.createdAt }}
+          </span>
+          <ContentRenderer :value="doc" />
+        </article>
+      </template>
     </ContentDoc>
 </template>
 
