@@ -1,6 +1,6 @@
 <template>
   <div id="coltoge">
-    <GlobalNavigationBar />
+    <Logo />
 
     <main>
       <MyContentDoc />
