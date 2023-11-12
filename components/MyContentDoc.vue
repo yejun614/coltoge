@@ -5,7 +5,7 @@ const props = defineProps(["path", ""]);
 onMounted(() => {
     renderMathInElement(document.body, {
       strict: "ignore",
-      output: "mathml",
+      output: "html",
       delimiters: [
           {left: "$$", right: "$$", display: true},
           {left: "$", right: "$", display: false},
